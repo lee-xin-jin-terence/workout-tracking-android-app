@@ -1,9 +1,9 @@
+> This is an **academic project** completed in **2021** as part of university coursework.
+
 # Workout Tracker App (Android)
 
 ### 👨‍💻 Authors
 **Terence**, **Feng Ming**, **Wei Hou**, **Huang Ai**
-
-> This is an **academic project** completed in **2021** as part of university coursework.
 
 ---
 
@@ -22,7 +22,7 @@ A lightweight workout tracking Android application built with **Java** and **SQL
 ## 📄 Project Materials
 
 - 📘 [External Documentation (PDF)](https://github.com/user-attachments/files/20025639/External_Documentation.pdf)  
-- 📊 [Presentation Slides (PPTX)](https://github.com/user-attachments/files/20025636/Presentation_Slides.pptx)  
+- 📊 [Presentation Slides (PPTX)](https://github.com/user-attachments/files/20025688/Presentation_Slides.pptx)
 - 🎥 [Demonstration of Step Count Functionality](https://github.com/user-attachments/assets/372eda37-9b29-4224-b829-93f48907a25c)
 
 ## 🛠️ Tech Stack
