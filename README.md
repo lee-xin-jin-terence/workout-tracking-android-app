@@ -19,6 +19,10 @@ A lightweight workout tracking Android application built with **Java** and **SQL
 - 🖼️ View photos and mapped workout path  
 - 📤 Share workout summary and photos with others  
 
+## Sample Screenshot
+<img width="158" alt="image" src="https://github.com/user-attachments/assets/1499ea18-7a18-4406-96cc-55ee4e2adbc4" />
+
+
 ## 📄 Project Materials
 
 - 📘 [Project Documentation (PDF)](https://github.com/user-attachments/files/20025691/Android-Workout-App-Documentation.pdf)
@@ -34,9 +38,3 @@ A lightweight workout tracking Android application built with **Java** and **SQL
 - **Android Location Services** – For GPS tracking  
 - **Android Share Intent** – For sharing workout data  
 
-## ⚙️ Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/lee-xin-jin-terence/workout-tracking-android-app/
-   cd workout-tracking-android-app
