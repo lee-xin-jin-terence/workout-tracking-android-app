@@ -19,9 +19,11 @@ A lightweight workout tracking Android application built with **Java** and **SQL
 - 🖼️ View photos and mapped workout path  
 - 📤 Share workout summary and photos with others  
 
-## Sample Screenshot
+## App Screenshot
 <img width="158" alt="image" src="https://github.com/user-attachments/assets/1499ea18-7a18-4406-96cc-55ee4e2adbc4" />
 <img width="158" alt="image" src="https://github.com/user-attachments/assets/ad17789c-1be2-417b-a2aa-6a9bc3dc7200" />
+<img width="146" alt="image" src="https://github.com/user-attachments/assets/41015781-3d20-4439-a382-147a21a8d6f3" />
+<img width="155" alt="image" src="https://github.com/user-attachments/assets/9e3dd90b-f91f-445c-89bf-3475f813b7aa" />
 
 
 ## 📄 Project Materials
