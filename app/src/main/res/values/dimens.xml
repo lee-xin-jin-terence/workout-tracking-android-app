@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_home_page_summary_icon_height_width">80dp</dimen>
+    <dimen name="activity_home_page_direct_child_view_start_end_margin">25dp</dimen>
+
+    <dimen name="activity_complete_workout_icon_end_margin">10dp</dimen>
+
+    <dimen name="activity_complete_workout_text_view_bottom_margin">5dp</dimen>
+
+    <dimen name="activity_complete_workout_linear_layout_margin_top">15dp</dimen>
+</resources>

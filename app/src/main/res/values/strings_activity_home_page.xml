@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Contains strings for HomePageActivity
+-->
+<resources>
+    <string name="activity_home_page_in_this_week_text">
+        This Week\'s Workout Summary
+    </string>
+
+    <string name="activity_home_page_travelled_text">
+        Travelled
+    </string>
+
+    <string name="activity_home_page_zero_km_text">
+        0.00 km
+    </string>
+
+    <string name="activity_home_age_time_spent_text">
+        Time Spent
+    </string>
+
+    <string name="activity_home_page_zero_duration_text">
+        00:00:00
+    </string>
+
+    <string name="activity_home_page_steps_taken_text">
+        Steps Taken
+    </string>
+
+    <string name="activity_home_page_zero_steps_text">
+        0 steps
+    </string>
+
+    <string name="activity_home_page_calories_burnt_text">
+        Calories Burnt
+    </string>
+
+    <string name="activity_home_page_zero_calories_text">
+        0 cal
+    </string>
+
+
+    <string name="activity_home_page_start_tracking_your_workout_text">
+        Start Tracking Your Workout
+    </string>
+
+    <string name="activity_home_page_view_past_workout_records_text">
+        View Past Workout Records
+    </string>
+</resources>

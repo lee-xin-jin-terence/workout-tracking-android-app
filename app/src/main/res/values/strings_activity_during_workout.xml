@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_during_workout_pause_text">
+        Pause
+    </string>
+
+    <string name="activity_during_workout_continue_text">
+        Continue
+    </string>
+
+    <string name="activity_during_workout_finish_text">
+        Finish
+    </string>
+
+    <string name="activity_during_workout_take_photo_text">
+        Take Photo
+    </string>
+
+    <string name="activity_during_workout_map_text">
+        Map
+    </string>
+
+    <string name="activity_during_workout_info_text">
+        Info
+    </string>
+
+
+    <string name="activity_during_workout_prompt_finish_title_text">
+        Confirmation
+    </string>
+
+    <string name="activity_during_workout_prompt_finish_confirmation_text">
+        Are you sure you want to end the workout session?
+    </string>
+
+    <string name="activity_during_workout_yes_text">
+        Yes
+    </string>
+
+    <string name="activity_during_workout_no_text">
+        No
+    </string>
+</resources>

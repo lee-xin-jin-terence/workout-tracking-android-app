@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="linear_layout_single_workout_record_walk_text">
+        Walk
+    </string>
+
+    <string name="linear_layout_single_workout_record_run_text">
+        Run
+    </string>
+
+    <string name="linear_layout_single_workout_record_noon_time_text">
+        12:00 PM
+    </string>
+
+    <string name="linear_layout_single_workout_record_distance_text">
+        Distance
+    </string>
+
+    <string name="linear_layout_single_workout_record_zero_km_text">
+        0.00 km
+    </string>
+
+    <string name="linear_layout_single_workout_record_duration_text">
+        Duration
+    </string>
+
+    <string name="linear_layout_single_workout_record_zero_duration_text">
+        00:00:00
+    </string>
+
+    <string name="linear_layout_single_workout_record_steps_text">
+        Steps
+    </string>
+
+    <string name="linear_layout_single_workout_record_zero_steps_text">
+        0
+    </string>
+
+    <string name="linear_layout_single_workout_record_calories_text">
+        Calories
+    </string>
+
+    <string name="linear_layout_single_workout_record_zero_calories_text">
+        0
+    </string>
+</resources>

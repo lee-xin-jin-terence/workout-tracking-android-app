@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="activity_view_past_workout_past_workout_records_text">
+        Past Workout Records
+    </string>
+
+    <string name="activity_view_past_workout_click_instruction_text">
+        (Click on each workout record to see its map and/or images)
+    </string>
+
+    <string name="activity_view_past_workout_no_workout_records_to_show_text">
+        There is currently no workout records available
+    </string>
+
+    <string name="activity_view_past_workout_prompt_delete_title_text">
+        Confirmation
+    </string>
+
+    <string name="activity_view_past_workout_prompt_delete_confirmation_text">
+        Are you sure you want to delete the workout session? This action cannot be undone.
+    </string>
+
+    <string name="activity_view_past_workout_no_text">
+        No
+    </string>
+
+    <string name="activity_view_past_workout_yes_text">
+        Yes
+    </string>
+</resources>

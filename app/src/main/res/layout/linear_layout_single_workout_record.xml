@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Filename: linear_layout_single_workout_record
+    Purpose: A layout to be used as a template for display a single workout record
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <!-- Requires an additional linear layout to wrap around the root view as
+        margins will be lost after layout inflation
+
+        Ignore the lint error messages
+    -->
+    <LinearLayout
+        android:id="@+id/singleWorkoutRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/thin_black_border"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:padding="10dp">
+
+        <!-- Displays the start time, activity icon type
+                    and activity type text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Displays the start time of the workout -->
+            <TextView
+                android:id="@+id/startTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:text="@string/linear_layout_single_workout_record_noon_time_text"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_weight="3"/>
+
+            <!-- Displays the activity type icon -->
+            <ImageView
+                android:layout_weight="10"
+                android:id="@+id/activityTypeImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:src="@drawable/running_icon"
+                android:scaleType="fitCenter"
+                android:contentDescription="@null"/>
+
+            <!-- Displays the activity type text -->
+            <TextView
+                android:id="@+id/activityTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_weight="3"
+                android:layout_marginTop="5dp"
+                />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:useDefaultMargins="true">
+
+            <!-- Display Distance Travelled-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_distance_text"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/distanceTravelledTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_zero_km_text"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!-- Duration of Workout Session -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:gravity="center"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_duration_text"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/workoutDurationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_zero_duration_text"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <!-- Display Number of Steps Taken -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_steps_text"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/numberOfStepsTakenTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_zero_steps_text"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!--Display Calories Burnt-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:gravity="center"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_calories_text"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:id="@+id/caloriesConsumedTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/linear_layout_single_workout_record_zero_calories_text"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </GridLayout>
+
+        <!-- Displays Photo and Map Icon -->
+        <LinearLayout
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:gravity="center">
+
+
+            <!-- Image view displaying a map icon
+                To be hidden if the workout session has no map coordinates
+                stored
+            -->
+            <ImageView
+                android:id="@+id/mapIconImageView"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/map_icon"
+                android:contentDescription="@null"/>
+
+            <!-- Image view displaying a photo icon
+                To be hidden if the workout session has no photos
+            -->
+            <ImageView
+                android:id="@+id/photoIconImageView"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:src="@drawable/photo_icon"
+                android:layout_marginBottom="5dp"
+                android:contentDescription="@null"/>
+
+
+        </LinearLayout>
+
+        <!--Triple Dot more icon-->
+        <ImageButton
+            android:id="@+id/tripleDotMoreImageButton"
+            android:layout_width="31dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:src="@drawable/more_triple_dot_vertical_icon"
+            android:contentDescription="@null"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_map_and_image_slideshow_no_map_or_image_to_show_text">
+        There is no map or image to be shown
+    </string>
+</resources>
