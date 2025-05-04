@@ -19,16 +19,11 @@ A lightweight workout tracking Android application built with **Java** and **SQL
 - 🖼️ View photos and mapped workout path  
 - 📤 Share workout summary and photos with others  
 
-## Documentation
-[External_Documentation.pdf](https://github.com/user-attachments/files/20025639/External_Documentation.pdf)
+## 📄 Project Materials
 
-
-## Powerpoint Slides
-[Presentation_Slides.pptx](https://github.com/user-attachments/files/20025636/Presentation_Slides.pptx)
-
-## Demonstration of Step Count Functionality
-https://github.com/user-attachments/assets/372eda37-9b29-4224-b829-93f48907a25c
-
+- 📘 [External Documentation (PDF)](https://github.com/user-attachments/files/20025639/External_Documentation.pdf)  
+- 📊 [Presentation Slides (PPTX)](https://github.com/user-attachments/files/20025636/Presentation_Slides.pptx)  
+- 🎥 [Demonstration of Step Count Functionality](https://github.com/user-attachments/assets/372eda37-9b29-4224-b829-93f48907a25c)
 
 ## 🛠️ Tech Stack
 
@@ -43,6 +38,5 @@ https://github.com/user-attachments/assets/372eda37-9b29-4224-b829-93f48907a25c
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/workout-tracker-app.git](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/)
-   cd workout-tracker-app
-
+   git clone https://github.com/lee-xin-jin-terence/workout-tracking-android-app/
+   cd workout-tracking-android-app
