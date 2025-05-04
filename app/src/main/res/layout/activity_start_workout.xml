@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Filename: activity_start_workout.xml
+    Purpose: Contains the layout for StartWorkoutActivity
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.activities.StartWorkoutActivity"
+    android:background="@drawable/sky_blue_background"
+    android:orientation="vertical"
+    android:gravity="center|top">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="118dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@null"
+        app:srcCompat="@drawable/running_icon" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="336dp"
+        android:layout_height="129dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:text="@string/activity_start_workout_click_on_start_to_begin_instruction_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <!--
+        Contains the dropdown for user to select the activity type
+    -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="338dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="33dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTextView">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="311dp"
+            android:layout_height="33dp"
+            android:gravity="start"
+            android:text="@string/activity_start_workout_select_activity_type_label_text"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_marginBottom="5dp"/>
+
+        <Spinner
+            android:id="@+id/selectWorkoutTypeSpinner"
+            android:layout_width="333dp"
+            android:layout_height="70dp"
+            android:background="@drawable/thin_black_border"
+            android:scaleType="fitStart"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+    <!--
+        Contains the start button for the user to start the workout session tracking
+    -->
+    <FrameLayout
+        android:id="@+id/startWorkoutButtonAndTextViewContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="153dp"
+                android:layout_height="102dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/selectWorkoutTypeSpinner"
+                app:srcCompat="@drawable/play_icon" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:scaleType="fitCenter"
+                android:text="@string/activity_start_workout_start_text"
+                android:textColor="@color/black"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/startWorkoutImageButton" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/startWorkoutImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@null" />
+    </FrameLayout>
+
+
+
+</LinearLayout>

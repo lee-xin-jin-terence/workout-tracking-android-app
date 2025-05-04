@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Filename: activity_view_past_workout.xml
+    Purpose: Contains the layout for ViewPastWorkoutActivity.java
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controllers.activities.StartWorkoutActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/recordsDisplayContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sky_blue_background">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start|top"
+                android:orientation="horizontal"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageButton
+                    android:id="@+id/backArrowNavigationImageButton"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:src="@drawable/back_arrow_navigation_icon"
+                    android:contentDescription="@null"
+                    />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_view_past_workout_past_workout_records_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center|top"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/activity_view_past_workout_click_instruction_text"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/pastWorkoutSessionsRootContainer">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/noWorkoutRecordsAvailableTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="@string/activity_view_past_workout_no_workout_records_to_show_text"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

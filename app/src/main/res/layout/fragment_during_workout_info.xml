@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Filename: fragment_during_workout_info.xml
+    Purpose: Contains the layout for DuringWorkoutInfoFragment.java
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky_blue_background"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".controllers.fragments.DuringWorkoutInfoFragment">
+
+
+    <!-- Displays duration of the workout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fragment_during_workout_info_duration_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+             />
+
+        <TextView
+            android:id="@+id/workoutDurationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fragment_during_workout_info_zero_duration_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- Displays distance travelled during the workout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fragment_during_workout_info_distance_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+
+        <TextView
+            android:id="@+id/distanceTravelledTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/fragment_during_workout_info_zero_km_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.7"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+
+        <!-- Displays number of steps taken -->
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="120dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fragment_during_workout_info_steps_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/numberOfStepsTakenTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fragment_during_workout_zero_steps_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fragment_during_workout_info_calories_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+
+            <TextView
+                android:id="@+id/caloriesConsumedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/fragment_during_workout_info_zero_calories_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+
+</LinearLayout>

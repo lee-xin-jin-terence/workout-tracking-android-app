@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="activity_complete_workout_post_workout_summary_text">
+        Post Workout Summary
+    </string>
+
+    <string name="activity_complete_workout_distance_text">
+        Distance
+    </string>
+
+    <string name="activity_complete_workout_zero_km_text">
+        0.00 km
+    </string>
+
+    <string name="activity_complete_workout_duration_text">
+        Duration
+    </string>
+
+    <string name="activity_complete_workout_zero_duration_text">
+        00:00:00
+    </string>
+
+    <string name="activity_complete_workout_steps_text">
+        Steps
+    </string>
+
+    <string name="activity_complete_workout_zero_steps_text">
+        0
+    </string>
+
+    <string name="activity_complete_workout_calories_text">
+        Calories
+    </string>
+
+    <string name="activity_complete_workout_zero_calories_text">
+        0
+    </string>
+
+
+    <string name="activity_complete_workout_delete_text">
+        Delete
+    </string>
+
+    <string name="activity_complete_workout_back_to_home_text">
+        Back to Home
+    </string>
+
+    <string name="activity_complete_workout_share_text">
+        Share
+    </string>
+
+
+
+    <string name="activity_complete_workout_prompt_delete_title_text">
+        Confirmation
+    </string>
+
+    <string name="activity_complete_workout_prompt_delete_confirmation_text">
+        Are you sure you want to delete the workout session? This action
+        cannot be undone.
+    </string>
+
+    <string name="activity_complete_workout_yes_text">
+        Yes
+    </string>
+
+    <string name="activity_complete_workout_no_text">
+        No
+    </string>
+</resources>

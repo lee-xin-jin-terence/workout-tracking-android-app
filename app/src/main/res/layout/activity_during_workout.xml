@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:id="@+id/layoutRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.murdoch.fitnessapp.controllers.activities.DuringWorkoutActivity"
+    android:orientation="vertical">
+
+    <!-- Fragment Container View for DuringWorkoutInfoFragment
+        and DuringWorkoutMapFragment -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8" />
+
+
+    <!-- Just a simple gray divider line -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+
+    <!-- Container for pause and finish button -->
+    <LinearLayout
+        android:id="@+id/pauseContinueAndFinishButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="3">
+
+        <!-- Container for pauseOrContinue image button
+            and textview -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginEnd="40dp">
+            <ImageButton
+                android:id="@+id/pauseOrContinueImageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pause_icon"
+                android:contentDescription="@null"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:scaleType="fitCenter"
+                />
+            <TextView
+                android:id="@+id/pauseOrContinueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_during_workout_pause_text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+
+        <!-- Container for finish image button
+            and textview -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/finishImageButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flag_icon"
+                android:contentDescription="@null"
+                android:background="@null"
+                android:backgroundTint="@null"/>
+            <TextView
+                android:id="@+id/finishTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_during_workout_finish_text"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/takePhotoAndMapInfoToggleButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="bottom">
+
+        <!-- Container for take photo image button and text view -->
+        <LinearLayout
+            android:id="@+id/takePhotoImageButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:padding="20dp">
+            <ImageButton
+                android:id="@+id/takePhotoImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:src="@drawable/camera_icon"
+                android:scaleType="fitCenter"
+                android:contentDescription="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_during_workout_take_photo_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Container for info mode or map mode image button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:padding="20dp">
+
+            <ImageButton
+                android:id="@+id/infoModeOrMapModeImageButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/map_icon_black_white"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:backgroundTint="@null"
+                android:contentDescription="@null"/>
+            <TextView
+                android:id="@+id/infoModeOrMapModeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_during_workout_map_text"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

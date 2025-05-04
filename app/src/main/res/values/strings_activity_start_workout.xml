@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Contains strings for StartWorkoutActivity
+-->
+<resources>
+    <string name="activity_start_workout_select_workout_activity_type_instruction_text">
+        Please select an activity type
+    </string>
+
+    <string name="activity_start_workout_click_on_start_to_begin_instruction_text">
+        Click on the Start button to begin!
+    </string>
+
+
+    <string name="activity_start_workout_select_activity_type_label_text">
+        Select an Activity Type
+    </string>
+
+    <string-array name="activity_start_workout_activity_types_array">
+        <item>--- Please Select One ---</item>
+        <item>Walking</item>
+        <item>Running</item>
+    </string-array>
+
+    <string name="activity_start_workout_start_text">START!</string>
+
+
+</resources>

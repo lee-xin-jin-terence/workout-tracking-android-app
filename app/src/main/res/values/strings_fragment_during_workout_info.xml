@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Contains strings for DuringWorkoutInfoFragment
+-->
+<resources>
+    <string name="fragment_during_workout_info_duration_text">
+        Duration
+    </string>
+
+    <string name="fragment_during_workout_info_zero_duration_text">
+        00:00:00
+    </string>
+
+    <string name="fragment_during_workout_info_distance_text">
+        Distance
+    </string>
+
+    <string name="fragment_during_workout_info_zero_km_text">
+        0.00 km
+    </string>
+
+    <string name="fragment_during_workout_info_steps_text">
+        Steps
+    </string>
+
+    <string name="fragment_during_workout_zero_steps_text">
+        0
+    </string>
+
+    <string name="fragment_during_workout_info_calories_text">
+        Calories
+    </string>
+
+    <string name="fragment_during_workout_info_zero_calories_text">
+        0
+    </string>
+
+</resources>

@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Filename: activity_home_page.xml
+    Purpose: Contains the layout for HomePageActivity
+
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".controllers.activities.HomePageActivity"
+    android:background="@drawable/sky_blue_background"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:paddingTop="10dp"
+    android:paddingStart="@dimen/activity_home_page_direct_child_view_start_end_margin"
+    android:paddingEnd="@dimen/activity_home_page_direct_child_view_start_end_margin"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|fill_horizontal"
+        android:layout_marginBottom="20dp"
+        android:gravity="center|fill_horizontal"
+        android:text="@string/activity_home_page_in_this_week_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+
+
+
+    <!--
+        Displays workout summary for past week.
+        Workout summary includes
+            (a) Distance Travelled
+            (b) Time spent
+            (c) Steps Taken
+            (d) Calories Burnt
+    -->
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/thin_black_border"
+        android:layout_weight="5">
+
+        <!-- Displays Distance Travelled -->
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="0"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_page_summary_icon_height_width"
+                android:layout_height="@dimen/activity_home_page_summary_icon_height_width"
+                android:scaleType="fitCenter"
+                android:src="@drawable/distance_icon"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/activity_home_page_travelled_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/distanceTravelledTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="@string/activity_home_page_zero_km_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Displays Workout Duration -->
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_page_summary_icon_height_width"
+                android:layout_height="@dimen/activity_home_page_summary_icon_height_width"
+                android:scaleType="fitCenter"
+                android:src="@drawable/stopwatch_icon"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@null"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/activity_home_age_time_spent_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/durationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="@string/activity_home_page_zero_duration_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <!-- Displays Number of steps taken -->
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="1"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_page_summary_icon_height_width"
+                android:layout_height="@dimen/activity_home_page_summary_icon_height_width"
+                android:scaleType="fitCenter"
+                android:src="@drawable/footprint_icon"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@null"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_home_page_steps_taken_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/numberOfStepsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_home_page_zero_steps_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+
+        <!-- Displays calories burnt -->
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="1"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_columnWeight="1"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/activity_home_page_summary_icon_height_width"
+                android:layout_height="@dimen/activity_home_page_summary_icon_height_width"
+                android:src="@drawable/fire_icon"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@null"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_home_page_calories_burnt_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/caloriesConsumedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_home_page_zero_calories_text"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <!-- Container for the "Start Tracking Your Workout"
+        related views -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center|start"
+            android:background="@drawable/thin_black_border"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp">
+
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/running_icon"
+                android:contentDescription="@null"
+                />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="@string/activity_home_page_start_tracking_your_workout_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageView
+
+                android:layout_weight="2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/right_arrow_icon_2"
+                android:scaleType="fitCenter"
+                android:contentDescription="@null"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/startWorkoutImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            />
+
+    </FrameLayout>
+
+
+    <!-- Container for the "View Past Workout Record"
+        related views -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:id="@+id/viewPastWorkoutRecordsLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/thin_black_border"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:gravity="center|start">
+
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/report_icon"
+                android:scaleType="fitCenter"
+                android:contentDescription="@null"
+                />
+
+            <TextView
+                android:layout_weight="20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_home_page_view_past_workout_records_text"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_weight="2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/right_arrow_icon_2"
+                android:contentDescription="@null"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/viewPastWorkoutRecordsImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@null"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
