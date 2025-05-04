@@ -21,7 +21,7 @@ A lightweight workout tracking Android application built with **Java** and **SQL
 
 ## 📄 Project Materials
 
-- 📘 [External Documentation (PDF)](https://github.com/user-attachments/files/20025639/External_Documentation.pdf)  
+- 📘 [Project Documentation (PDF)](https://github.com/user-attachments/files/20025691/Android-Workout-App-Documentation.pdf)
 - 📊 [Presentation Slides (PPTX)](https://github.com/user-attachments/files/20025688/Presentation_Slides.pptx)
 - 🎥 [Demonstration of Step Count Functionality](https://github.com/user-attachments/assets/372eda37-9b29-4224-b829-93f48907a25c)
 
