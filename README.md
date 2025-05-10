@@ -41,12 +41,11 @@ Test cases were written using **JUnit** and **Android Instrumentation** to simul
 
 ### 📁 Test Directory Structure
 
-    [app/src/main/java/com/murdoch/fitnessapp](https://github.com/yourusername/yourrepository/tree/main/app/src/main/java/com/murdoch/fitnessapp)  \// source code
+**Source Code:** [app/src/main/java/com/murdoch/fitnessapp]([https://github.com/yourusername/yourrepository/tree/main/app/src/main/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/main))  
          
-    [app/src/test/java/com/murdoch/fitnessapp](https://github.com/yourusername/yourrepository/tree/main/app/src/test/java/com/murdoch/fitnessapp)  \// code for unit tests
+**Unit Tests (JUnit):**[app/src/test/java/com/murdoch/fitnessapp]([https://github.com/yourusername/yourrepository/tree/main/app/src/test/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/test/java/com/murdoch/fitnessapp))  
    
-    [androidTest/java/com/murdoch/fitnessapp](https://github.com/yourusername/yourrepository/tree/main/androidTest/java/com/murdoch/fitnessapp)  \// code for automated instrumented tests
-
+**Automated Instrumented Tests (Android JUnit Runner):** [androidTest/java/com/murdoch/fitnessapp]([https://github.com/yourusername/yourrepository/tree/main/androidTest/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/androidTest/java/com/murdoch/fitnessapp))  
 
 ---
 
