@@ -37,13 +37,17 @@ Testing was an essential part of the development process to ensure the quality a
 
 Test cases were written using **JUnit** and **Android Instrumentation** to simulate real user actions and ensure the app behaves as expected.
 
-### 📁 Test Directory Structure
+### 📁 Directory Structure
 
 **Source Code:** [app/src/main/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/main)  
-         
-**Unit Tests (JUnit):** [app/src/test/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/test/java/com/murdoch/fitnessapp)  
-   
-**Automated Instrumented Tests (Android JUnit Runner):** [app/src/androidTest/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/androidTest/java/com/murdoch/fitnessapp)
+  *(Contains the app’s core logic and UI components)*
+
+**Unit Tests (JUnit - Models, Database Persistence):** [app/src/test/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/test/java/com/murdoch/fitnessapp)  
+  *(Contains unit tests to verify model logic)*
+
+**Automated Instrumented Tests (Android JUnit Runner - UI Interaction):** [app/src/androidTest/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/androidTest/java/com/murdoch/fitnessapp)  
+  *(Contains instrumented tests for verifying UI interaction, app behavior and database persistence)*
+
 
 ---
 
