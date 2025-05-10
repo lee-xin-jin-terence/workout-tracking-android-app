@@ -42,10 +42,10 @@ Test cases were written using **JUnit** and **Android Instrumentation** to simul
 - **Source Code:** [app/src/main/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/main)  
 
 
-- **Unit Tests (JUnit - Models, Database Persistence):** [app/src/test/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/test/java/com/murdoch/fitnessapp)  
+- **Unit Tests (JUnit - Models):** [app/src/test/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/test/java/com/murdoch/fitnessapp)  
   
 
-- **Automated Instrumented Tests (Android JUnit Runner - UI Interaction):** [app/src/androidTest/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/androidTest/java/com/murdoch/fitnessapp)  
+- **Automated Instrumented Tests (Android JUnit Runner - UI Interaction, Database Persistence):** [app/src/androidTest/java/com/murdoch/fitnessapp](https://github.com/lee-xin-jin-terence/workout-tracking-android-app/tree/main/app/src/androidTest/java/com/murdoch/fitnessapp)  
 
 
 ---
