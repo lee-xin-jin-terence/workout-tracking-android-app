@@ -31,13 +31,11 @@ Testing was an essential part of the development process to ensure the quality a
 
 ### Test Coverage
 - The testing directory contains various test cases for:
-  - **Step counting functionality**
-  - **Workout data persistence in SQLite**
-  - **GPS location tracking**
-  - **Camera API and photo-taking functionality**
-  - **App UI interaction**
+  - **Models**: Ensuring correct data handling and logic in the app's data models.
+  - **App UI interaction**: Verifying the app's user interface behaves as expected through automated UI tests.
+  - **Workout data persistence in SQLite**: Ensuring that workout data is accurately saved and retrieved from the SQLite database.
 
-Test cases were written using **JUnit** and **Android Instrumentation** to simulate real user actions and ensure the app behaves as expected across different devices.
+Test cases were written using **JUnit** and **Android Instrumentation** to simulate real user actions and ensure the app behaves as expected.
 
 ### 📁 Test Directory Structure
 
