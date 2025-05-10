@@ -41,58 +41,12 @@ Test cases were written using **JUnit** and **Android Instrumentation** to simul
 
 ### 📁 Test Directory Structure
 
-```
-/app/src  
-  /main  
-    /java  
-      /com/murdoch/fitnessapp
-          /callbackinterfaces
-            - IFragmentReadyListener.java
-          /controllers
-            /activities
-              - CompleteWorkoutActivity.java
-              - DuringWorkoutActivity.java
-              - HomePageActivity.java
-              - MapAndSlideshowWrapperActivity.java
-              - StartWorkoutActivity.java
-              - ViewPastWorkoutActivity.java
-            /fragments
-              - DuringWorkoutInfoFragment.java
-              - DuringWorkoutFragment.java
-              - MapAndImageSlideshowFragment.java
-          /databases
-            /exceptions
-              - RecordInsertionException.java
-              - RecordNotFoundException.java
-            /helpers
-              - WorkoutSessionDatabaseHelper.java
-          /models
-            /interfaces
-              - IGPSLocation.java
-              - IStoredWorkoutSession.java
-              - IWorkoutSession.java
-              - IWorkoutSessionSummary.java
-            /implementations
-              - GPSLocation.java
-              - StoredWorkoutSession.java
-              - WorkoutSession.java
-              - WorkoutSessionSummary.java
-/app/src/test  
-    /java  
-      /com/murdoch/fitnessapp
-        - GPSLocationUnitTest.java
-        - StoredWorkoutSessionUnitTest.java
-        - WorkoutSessionSummaryUnitTest.java
-        - WorkoutSessionUnitTest.java 
-    /androidTest  
-      /java  
-        /com/murdoch/fitnessapp  
-          - AutomatedUITest.java  // Instrumented test for UI interactions
-          - GPSLocationInstrumentedTest.java  
-          - StoredWorkoutSessionInstrumentedTest.java  
-          - WorkoutSessionDatabaseHelperInstrumentedTest.java
-          - WorkoutSessionInstrumentedTest.java
-```
+    [app/src/main/java/com/murdoch/fitnessapp](https://github.com/yourusername/yourrepository/tree/main/app/src/main/java/com/murdoch/fitnessapp)  \// source code
+         
+    [app/src/test/java/com/murdoch/fitnessapp](https://github.com/yourusername/yourrepository/tree/main/app/src/test/java/com/murdoch/fitnessapp)  \// code for unit tests
+   
+    [androidTest/java/com/murdoch/fitnessapp](https://github.com/yourusername/yourrepository/tree/main/androidTest/java/com/murdoch/fitnessapp)  \// code for automated instrumented tests
+
 
 ---
 
