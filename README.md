@@ -1,7 +1,8 @@
+>> Note that this is an academic project from Murdoch University
 # Workout Tracker App (Android)
 
 ### 👨‍💻 Authors  
-**Terence**, **Feng Ming**, **Wei Hou**, **Huang Ai**
+**Terence** (Team Leader), **Feng Ming**, **Wei Hou**, **Huang Ai**
 
 ---
 
