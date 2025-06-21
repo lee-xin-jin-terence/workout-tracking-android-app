@@ -1,4 +1,4 @@
->> Note that this is an academic project from Murdoch University
+>Please note this is an academic project completed at Murdoch University.
 # Workout Tracker App (Android)
 
 ### 👨‍💻 Authors  
